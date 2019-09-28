@@ -1,4 +1,4 @@
-/** An empty service worker! */
+/** An empty service worker! 
 self.addEventListener('install', function(e) {
     e.waitUntil(
       caches.open('your-magic-cache').then(function(cache) {
@@ -18,4 +18,8 @@ self.addEventListener('install', function(e) {
         return response || fetch(event.request);
       })
     );
-  });
+  });*/
+
+self.addEventListener('fetch', function(event) {
+  /** An empty fetch handler! */
+});
